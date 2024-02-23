@@ -26,7 +26,7 @@
                                     <a class="nav-link" href="listGaulois.php">Liste des gaulois</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="listGauloisVillageSpecialites.php">Dox des gaulois</a>
+                                    <a class="nav-link" aria-current="page" href="listGauloisVillageSpecialites.php">Info complète des gaulois</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" aria-current="page" href="listVillages.php">Liste des villages</a>
