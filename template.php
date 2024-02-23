@@ -13,6 +13,11 @@
         <div id="wrapper">
             <header>
                 <!-- NAVBAR -->
+                <?php 
+                 $activeGaulois = (isset($activeGaulois)) ? $activeGaulois : "";
+                $activeVillageSpe = (isset($activeVillageSpe)) ? $activeVillageSpe : "";
+                $activeVillage = (isset($activeVillage)) ? $activeVillage : "";
+                ?>
                 <nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-dark" aria-label="Third navbar example">
                     <div class="container-fluid">
                         <span class="navbar-brand">Les gaulois</span>
@@ -23,13 +28,13 @@
                         <div class="collapse navbar-collapse" id="navbarsExample03">
                             <ul class="navbar-nav me-auto mb-2 mb-sm-0">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="listGaulois.php">Liste des gaulois</a>
+                                    <a class="nav-link <?= $activeGaulois ?>" href="listGaulois.php">Liste des gaulois</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="listGauloisVillageSpecialites.php">Info complète des gaulois</a>
+                                    <a class="nav-link <?= $activeVillageSpe ?>" aria-current="page" href="listGauloisVillageSpecialites.php">Info complète des gaulois</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="listVillages.php">Liste des villages</a>
+                                    <a class="nav-link <?= $activeVillage ?>" aria-current="page" href="listVillages.php">Liste des villages</a>
                                 </li>
                             </ul>
                         </div>
