@@ -46,17 +46,8 @@ ob_start();
     </div>
 </main>
 
-<script>
-    const activeLink = document.querySelector("a[href='listGaulois.php']");
-    if (activeLink.classList.contains('active')){
-        activeLink.classList.remove('active')
-    }
-    else{
-        activeLink.classList.add('active')
-    }
-</script>
-
 <?php
     $content = ob_get_clean();
+    $activeGaulois = "active";
     require_once "template.php";
 ?>
