@@ -31,7 +31,7 @@ ob_start();
         echo "<table class='table'>",
                     "<thead>",
                         "<tr>",
-                            "<th scope='col'>Village</th>",
+                            "<th scope='col'>Ville/Village</th>",
                             "<th scope='col'>Habitants</th>",
                         "</tr>",
                     "</thead>",
