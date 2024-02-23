@@ -50,6 +50,17 @@ ob_start();
     </div>
 </main>
 
+<script>
+    const activeLink = document.querySelector("a[href='listVillages.php']");
+    if (activeLink.classList.contains('active')){
+        activeLink.classList.remove('active')
+    }
+    else{
+        activeLink.classList.add('active')
+    }
+</script>
+
+
 <?php
     $content = ob_get_clean();
     require_once "template.php";
